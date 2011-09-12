@@ -9,6 +9,17 @@ group :production do
 # for heroku
 #   $ sudo apt-get install libpq-dev
 #   $ bundle install
+# try Cedar stack!
+#   $ git add .
+#   $ git commit -a -m "..."
+#   $ git push
+#
+#   $ heroku create --stack cedar
+#   $ git push heroku master
+#   $ heroku run db:migrate
+#   $ heroku restart
+#   $ heroku db:push
+#
   gem "pg"
 end
 
