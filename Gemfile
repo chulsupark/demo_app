@@ -5,11 +5,14 @@ gem 'rails', '3.1.0'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-#group :production do
-#  gem "pg"
-#end
+group :production do
+# for heroku
+#   $ sudo apt-get install libpq-dev
+#   $ bundle install
+  gem "pg"
+end
 
-#group :development do
+group :development do
 	gem 'sqlite3'
 
 #PCS
@@ -17,7 +20,7 @@ gem 'rails', '3.1.0'
 	gem 'execjs'
 	gem 'therubyracer'
 #PCS_END
-#end
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
